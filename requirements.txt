@@ -1,0 +1,11 @@
+# 完整抓放流程的运行依赖（Jetson 上实测版本见行尾注释）
+numpy>=1.26,<2          # 1.26.4
+scipy>=1.11             # 1.13.1
+opencv-python>=4.8      # 4.11.0.86（Jetson 上也可用系统 OpenCV）
+pyrealsense2>=2.54      # 2.58.4（Jetson 需用厂商预编译包）
+python-can>=4.3         # 4.6.1，socketcan 通道
+ultralytics>=8.3        # 8.4.142，红块 YOLO 推理
+torch>=2.1              # 2.8.0（Jetson 用 NVIDIA 预编译 wheel）
+
+# 开发/自检用（运行抓放不需要）
+pytest>=8.0             # 9.1.1

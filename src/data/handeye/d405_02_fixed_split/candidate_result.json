@@ -1,0 +1,401 @@
+{
+  "schema_version": 1,
+  "validated": false,
+  "numerical_checks_passed": false,
+  "convention": "T_A_B maps B into A; metres; color optical camera",
+  "camera_serial": "260322275595",
+  "board": {
+    "inner_corners": [
+      9,
+      6
+    ],
+    "square_m": 0.02
+  },
+  "method": "HORAUD",
+  "opencv_version": "4.11.0",
+  "T_flange_wrist": [
+    [
+      0.030709463333916335,
+      0.874745211299325,
+      0.4836090819770054,
+      -0.0719410711858362
+    ],
+    [
+      -0.999239663546388,
+      0.01523997655857701,
+      0.03588645859088458,
+      0.011369355362950598
+    ],
+    [
+      0.02402131673002336,
+      -0.48434343024696136,
+      0.8745481221288871,
+      0.04750018420036297
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "T_base_board": [
+    [
+      0.027542290342761528,
+      0.9974643549806148,
+      0.06562227354931889,
+      0.29754175465698035
+    ],
+    [
+      0.9990429998285857,
+      -0.025235589100418714,
+      -0.03572463486525612,
+      -0.08661282663980456
+    ],
+    [
+      -0.03397803314166478,
+      0.06654341128813161,
+      -0.9972048273438927,
+      0.1700784954420341
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "T_flange_tcp": null,
+  "T_tcp_camera": null,
+  "thresholds": {
+    "max_corner_rms_mm": 5.0,
+    "max_rotation_deg": 2.0
+  },
+  "diversity": {
+    "rotation_singular_values": [
+      2.5672211432118583,
+      1.134050073920956,
+      0.887444072557562
+    ],
+    "max_pair_rotation_deg": 24.97389108351715
+  },
+  "candidates": {
+    "PARK": {
+      "train_mean_corner_mm": 2.6393119683757473,
+      "T_flange_wrist": [
+        [
+          0.030708561839695052,
+          0.8747783346734982,
+          0.4835492212956179,
+          -0.07193997755285783
+        ],
+        [
+          -0.9992397099064254,
+          0.015242020484893322,
+          0.035884299598320214,
+          0.01137078111043584
+        ],
+        [
+          0.024020540707101613,
+          -0.48428353884620046,
+          0.8745813099001946,
+          0.047488933433549006
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    "TSAI": {
+      "train_mean_corner_mm": 2.9522083946731468,
+      "T_flange_wrist": [
+        [
+          0.02504982379830234,
+          0.8868736583398897,
+          0.46133244029711834,
+          -0.07626408241060717
+        ],
+        [
+          -0.9993617772374448,
+          0.010459873781457851,
+          0.03415595463885628,
+          0.012353696714012742
+        ],
+        [
+          0.025466537347854024,
+          -0.4618936080779818,
+          0.8865696533788048,
+          0.05926874076207586
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    "HORAUD": {
+      "train_mean_corner_mm": 2.639140190536652,
+      "T_flange_wrist": [
+        [
+          0.030709463333916335,
+          0.874745211299325,
+          0.4836090819770054,
+          -0.0719410711858362
+        ],
+        [
+          -0.999239663546388,
+          0.01523997655857701,
+          0.03588645859088458,
+          0.011369355362950598
+        ],
+        [
+          0.02402131673002336,
+          -0.48434343024696136,
+          0.8745481221288871,
+          0.04750018420036297
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    }
+  },
+  "train_residuals": [
+    {
+      "id": "sample_0000",
+      "origin_error_mm": 1.221028267533831,
+      "rotation_error_deg": 0.12174511702653742,
+      "corner_rms_mm": 1.2397418658226353
+    },
+    {
+      "id": "sample_0001",
+      "origin_error_mm": 1.069733659106541,
+      "rotation_error_deg": 0.26849248435966566,
+      "corner_rms_mm": 0.915864106400218
+    },
+    {
+      "id": "sample_0002",
+      "origin_error_mm": 1.9562771298162023,
+      "rotation_error_deg": 0.4039364144620267,
+      "corner_rms_mm": 1.746695965654856
+    },
+    {
+      "id": "sample_0003",
+      "origin_error_mm": 1.541336128291832,
+      "rotation_error_deg": 0.13439360756238744,
+      "corner_rms_mm": 1.705047354217183
+    },
+    {
+      "id": "sample_0005",
+      "origin_error_mm": 2.331349923067664,
+      "rotation_error_deg": 0.23598253250057682,
+      "corner_rms_mm": 2.537898656251065
+    },
+    {
+      "id": "sample_0006",
+      "origin_error_mm": 2.151407295879224,
+      "rotation_error_deg": 0.2932015553484404,
+      "corner_rms_mm": 2.4267878347813743
+    },
+    {
+      "id": "sample_0007",
+      "origin_error_mm": 2.4815167840768746,
+      "rotation_error_deg": 0.37245712479826815,
+      "corner_rms_mm": 2.7826645154514944
+    },
+    {
+      "id": "sample_0008",
+      "origin_error_mm": 3.472544242446946,
+      "rotation_error_deg": 0.47919558545266605,
+      "corner_rms_mm": 3.8519704695731356
+    },
+    {
+      "id": "sample_0010",
+      "origin_error_mm": 0.8153165537542244,
+      "rotation_error_deg": 0.4091081093539264,
+      "corner_rms_mm": 1.160666048281573
+    },
+    {
+      "id": "sample_0011",
+      "origin_error_mm": 2.9543344448503417,
+      "rotation_error_deg": 0.8378993166792683,
+      "corner_rms_mm": 3.69346082698258
+    },
+    {
+      "id": "sample_0012",
+      "origin_error_mm": 1.8836739752480396,
+      "rotation_error_deg": 0.4214072000319444,
+      "corner_rms_mm": 2.233240192350144
+    },
+    {
+      "id": "sample_0013",
+      "origin_error_mm": 3.6329074646920096,
+      "rotation_error_deg": 0.7483335297549056,
+      "corner_rms_mm": 4.3466014494079275
+    },
+    {
+      "id": "sample_0015",
+      "origin_error_mm": 3.983826874801578,
+      "rotation_error_deg": 0.5872515216246267,
+      "corner_rms_mm": 4.305980503080564
+    },
+    {
+      "id": "sample_0016",
+      "origin_error_mm": 0.8343644034014203,
+      "rotation_error_deg": 0.13287101717271363,
+      "corner_rms_mm": 0.9219394151913025
+    },
+    {
+      "id": "sample_0017",
+      "origin_error_mm": 2.613934388735008,
+      "rotation_error_deg": 0.4421791839434395,
+      "corner_rms_mm": 2.824727384239073
+    },
+    {
+      "id": "sample_0018",
+      "origin_error_mm": 2.062271770393195,
+      "rotation_error_deg": 0.29858550208157036,
+      "corner_rms_mm": 2.1996485997596005
+    },
+    {
+      "id": "sample_0020",
+      "origin_error_mm": 1.7611261413197556,
+      "rotation_error_deg": 0.2802900965871415,
+      "corner_rms_mm": 1.9027204755541631
+    },
+    {
+      "id": "sample_0021",
+      "origin_error_mm": 1.653723045564616,
+      "rotation_error_deg": 0.15400263222795932,
+      "corner_rms_mm": 1.7688176338547357
+    },
+    {
+      "id": "sample_0022",
+      "origin_error_mm": 2.5614364693817935,
+      "rotation_error_deg": 0.22554786750615172,
+      "corner_rms_mm": 2.81793898852513
+    },
+    {
+      "id": "sample_0023",
+      "origin_error_mm": 5.749737947087734,
+      "rotation_error_deg": 0.7844500626033301,
+      "corner_rms_mm": 6.39834505994815
+    },
+    {
+      "id": "sample_0025",
+      "origin_error_mm": 1.803084552497794,
+      "rotation_error_deg": 0.07138259483267681,
+      "corner_rms_mm": 1.6933631626436543
+    },
+    {
+      "id": "sample_0026",
+      "origin_error_mm": 2.768617914247184,
+      "rotation_error_deg": 0.3234962169013546,
+      "corner_rms_mm": 2.774364710374898
+    },
+    {
+      "id": "sample_0027",
+      "origin_error_mm": 4.441006699015152,
+      "rotation_error_deg": 0.601884118933862,
+      "corner_rms_mm": 4.572346596277781
+    },
+    {
+      "id": "sample_0028",
+      "origin_error_mm": 2.5692572619282172,
+      "rotation_error_deg": 0.31280301323101856,
+      "corner_rms_mm": 2.518532758256413
+    }
+  ],
+  "validation_residuals": [
+    {
+      "id": "sample_0004",
+      "origin_error_mm": 2.022081277671019,
+      "rotation_error_deg": 0.2183058068608726,
+      "corner_rms_mm": 2.281826705174546
+    },
+    {
+      "id": "sample_0009",
+      "origin_error_mm": 0.7183978281594475,
+      "rotation_error_deg": 0.26376560657567083,
+      "corner_rms_mm": 0.9812995214656904
+    },
+    {
+      "id": "sample_0014",
+      "origin_error_mm": 3.0022475717543595,
+      "rotation_error_deg": 0.4646817412539117,
+      "corner_rms_mm": 3.209680282633141
+    },
+    {
+      "id": "sample_0019",
+      "origin_error_mm": 2.2518170203860826,
+      "rotation_error_deg": 0.33033698411666246,
+      "corner_rms_mm": 2.394440656217125
+    },
+    {
+      "id": "sample_0024",
+      "origin_error_mm": 3.9508668352682643,
+      "rotation_error_deg": 0.5028895728688407,
+      "corner_rms_mm": 4.4082443486116585
+    },
+    {
+      "id": "sample_0029",
+      "origin_error_mm": 3.2566160768589265,
+      "rotation_error_deg": 0.48644957326490584,
+      "corner_rms_mm": 3.1483135406637555
+    }
+  ],
+  "note": "Diagnostic only. Source data unchanged. Prior whole-dataset inspection has occurred; do not call this an untouched prospective test set.",
+  "session": "d405_02",
+  "session_identity": {
+    "schema_version": 1,
+    "camera_serial": "260322275595",
+    "board": {
+      "inner_corners": [
+        9,
+        6
+      ],
+      "square_m": 0.02
+    },
+    "robot_frame": "flange",
+    "robot_model": "piper_x",
+    "channel": "can1",
+    "firmware": {
+      "hardware_version": "H-V1.2-1",
+      "motor_ratio_and_batch": "10",
+      "node_type": "ARM_MC",
+      "software_version": "S-V1.8-7",
+      "production_date": "260324",
+      "node_number": "15"
+    },
+    "sdk_profile": "v183",
+    "created_host_s": 1789008708.9963965,
+    "pose_convention": "metres; R=Rz(yaw)Ry(pitch)Rx(roll); T_A_B maps B to A",
+    "sync": "stationary bracket, not hardware trigger or cross-device timestamp equality",
+    "board_origin": "operator confirms same physical corner 0 and +X corner 8 in every image"
+  },
+  "color_intrinsics": {
+    "width": 640,
+    "height": 480,
+    "fx": 392.43328857421875,
+    "fy": 391.9425354003906,
+    "ppx": 323.0292663574219,
+    "ppy": 239.23623657226562,
+    "model": "distortion.inverse_brown_conrady",
+    "coeffs": [
+      -0.054131366312503815,
+      0.061379313468933105,
+      0.0004837252199649811,
+      2.4819331883918494e-05,
+      -0.020854298025369644
+    ]
+  },
+  "evaluation_design": "Post-hoc fixed same-session split; sample number % 5 == 4 is held out. Not newly acquired independent validation."
+}

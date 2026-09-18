@@ -1,0 +1,189 @@
+{
+  "rule": "zero-based sample number % 5 == 4 is holdout",
+  "assignments": [
+    {
+      "id": "sample_0000",
+      "original_split": "train",
+      "analysis_split": "train"
+    },
+    {
+      "id": "sample_0001",
+      "original_split": "train",
+      "analysis_split": "train"
+    },
+    {
+      "id": "sample_0002",
+      "original_split": "train",
+      "analysis_split": "train"
+    },
+    {
+      "id": "sample_0003",
+      "original_split": "train",
+      "analysis_split": "train"
+    },
+    {
+      "id": "sample_0004",
+      "original_split": "train",
+      "analysis_split": "holdout"
+    },
+    {
+      "id": "sample_0005",
+      "original_split": "train",
+      "analysis_split": "train"
+    },
+    {
+      "id": "sample_0006",
+      "original_split": "train",
+      "analysis_split": "train"
+    },
+    {
+      "id": "sample_0007",
+      "original_split": "train",
+      "analysis_split": "train"
+    },
+    {
+      "id": "sample_0008",
+      "original_split": "train",
+      "analysis_split": "train"
+    },
+    {
+      "id": "sample_0009",
+      "original_split": "train",
+      "analysis_split": "holdout"
+    },
+    {
+      "id": "sample_0010",
+      "original_split": "train",
+      "analysis_split": "train"
+    },
+    {
+      "id": "sample_0011",
+      "original_split": "train",
+      "analysis_split": "train"
+    },
+    {
+      "id": "sample_0012",
+      "original_split": "train",
+      "analysis_split": "train"
+    },
+    {
+      "id": "sample_0013",
+      "original_split": "train",
+      "analysis_split": "train"
+    },
+    {
+      "id": "sample_0014",
+      "original_split": "train",
+      "analysis_split": "holdout"
+    },
+    {
+      "id": "sample_0015",
+      "original_split": "train",
+      "analysis_split": "train"
+    },
+    {
+      "id": "sample_0016",
+      "original_split": "train",
+      "analysis_split": "train"
+    },
+    {
+      "id": "sample_0017",
+      "original_split": "train",
+      "analysis_split": "train"
+    },
+    {
+      "id": "sample_0018",
+      "original_split": "train",
+      "analysis_split": "train"
+    },
+    {
+      "id": "sample_0019",
+      "original_split": "train",
+      "analysis_split": "holdout"
+    },
+    {
+      "id": "sample_0020",
+      "original_split": "train",
+      "analysis_split": "train"
+    },
+    {
+      "id": "sample_0021",
+      "original_split": "train",
+      "analysis_split": "train"
+    },
+    {
+      "id": "sample_0022",
+      "original_split": "train",
+      "analysis_split": "train"
+    },
+    {
+      "id": "sample_0023",
+      "original_split": "train",
+      "analysis_split": "train"
+    },
+    {
+      "id": "sample_0024",
+      "original_split": "train",
+      "analysis_split": "holdout"
+    },
+    {
+      "id": "sample_0025",
+      "original_split": "train",
+      "analysis_split": "train"
+    },
+    {
+      "id": "sample_0026",
+      "original_split": "train",
+      "analysis_split": "train"
+    },
+    {
+      "id": "sample_0027",
+      "original_split": "train",
+      "analysis_split": "train"
+    },
+    {
+      "id": "sample_0028",
+      "original_split": "train",
+      "analysis_split": "train"
+    },
+    {
+      "id": "sample_0029",
+      "original_split": "train",
+      "analysis_split": "holdout"
+    }
+  ],
+  "source_record_sha256": {
+    "session.json": "10233264043e2e68738d4bb71370b5686a2cd1ad46703f04c392dcc2f60dc949",
+    "sample_0000/sample.json": "706533a8e829ae2cd339e1f021acb2f8143ec7cdf156d051604cd55cc97a2ba2",
+    "sample_0001/sample.json": "f96d7f1e7bb15f002be1492e796e10e157e2bcf0194cba5b1d4ef1493e29ff56",
+    "sample_0002/sample.json": "eba82c7be899b067c964337254b44b3d7907baa30c9ab8dfd87811acaab45401",
+    "sample_0003/sample.json": "bd9c2a7f84efd1832da1db56a7770c26c70d9ae9dcf919dada543b9dbac03489",
+    "sample_0004/sample.json": "808b7df852c5949f418a91da2fb9f593db925f3e0d13dc2c7a6a104bf0215d63",
+    "sample_0005/sample.json": "2b3739ed21c0e3a18c71968966b6e40c5ec911816f695552beb9404abd90861b",
+    "sample_0006/sample.json": "c69cddd7ee56c968bb7d57207209015d5874adc938e0d24d59ce45185e798990",
+    "sample_0007/sample.json": "4f2c6e820ad11f021b7f1f370d6a46b59cf05a323fa469d872c76e8871b7630b",
+    "sample_0008/sample.json": "5f60ea044ea9b80baa2e9a0c3ba8526374213b4e8255280078065c8e0c6cd1bc",
+    "sample_0009/sample.json": "b615f12ebc3001c29f6086cb9ca992b0167f1d845640e40bd5dd53cf4dc033ae",
+    "sample_0010/sample.json": "d531384631fcc550f7416601dc9222ed16d7669ce0add53c7a912a10e75c0224",
+    "sample_0011/sample.json": "b29d4f9dc59d255de656f2bd5a63900c21781287611d7e49b811b04dd9dcc975",
+    "sample_0012/sample.json": "ded9c2a96ba8a6fbce00374099c3b8e265c8fe68b193482e61f9604d1c0d155a",
+    "sample_0013/sample.json": "7253c66ba284c5e057b80785be196c7b093fc9ba1bdfc929874c1e2cdc3e6780",
+    "sample_0014/sample.json": "03e3145d2f076b471187b88b2bf985f28373ef8973d42927592a409f2203de64",
+    "sample_0015/sample.json": "8ada1cc4bb35d53d6e6333a709446406d686642dc27a92ecef03b48f748f6230",
+    "sample_0016/sample.json": "d3a51d6cb1998f85aeb62ae6685980594877d6744e4f3877df816a60b9d737b0",
+    "sample_0017/sample.json": "40337c6865aea23c4e84808334a5041096a944ac392c693d26085274203e57f9",
+    "sample_0018/sample.json": "d1626206a91dd1d03870134f3e7b36a9c46a19f3c2c30ca78d203c02d6ee37dc",
+    "sample_0019/sample.json": "cb7dab1ffabe91bcf9a366f3de3100e498d4c758b9250300c068afee3738d84c",
+    "sample_0020/sample.json": "448c0c486fda73d0ca6fa551573904451362e81b1212e805c2c5a1076f737e5d",
+    "sample_0021/sample.json": "bf19e1aceadd37c3b6a1c9d7a062a519dacf0f4d16cd8c89f1a29c13e2fe08ca",
+    "sample_0022/sample.json": "ee210de360262b3c914600445e454f7296013ab015de5f427c09836a84771e0a",
+    "sample_0023/sample.json": "d4a4eee0c104c937155fc99bbbba9662f2b808f94b3b21f094b15f2a213fbc54",
+    "sample_0024/sample.json": "871b263261b304c1e103cb6a57006b497adcc403c036bbc06a2730f0ba997e0c",
+    "sample_0025/sample.json": "9ffc0f549446faf3b583156547008af0147fcfec9701249b056840ca57941364",
+    "sample_0026/sample.json": "52ac877b54f39476a4312bcf096a3f059fb0921e85adfd6d4a3e8759e55f6caa",
+    "sample_0027/sample.json": "1d403bd26372aa422579b1908c004ad275d5cd24b359d3176b195b6657b0a448",
+    "sample_0028/sample.json": "c753ee97bfe0cf0f69aedb4dc13dc7eac49457a26828dd89bc0ea7461839ffa3",
+    "sample_0029/sample.json": "d78f809287b08d9acb76c98840826a64e74e73de61fcefcc3b6a0e0af797b116"
+  },
+  "source": "d405_02"
+}

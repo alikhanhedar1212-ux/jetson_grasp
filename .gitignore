@@ -1,0 +1,19 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+
+# 运行产生的记录（每次运行都会写 src/yolo_grasp/runs/<日期时间>/，体积大且属现场数据）
+src/yolo_grasp/runs/
+*.jsonl
+
+# 本地/现场文件
+*.log
+*.zip
+.DS_Store
+
+# 编辑器
+.vscode/
+.idea/
