@@ -1,4 +1,4 @@
-# Jetson 双相机机械臂抓取项目
+# Jetson 单相机机械臂抓取项目
 
 > **关于本仓库**：本文是完整开发项目的说明文档。当前仓库只包含**完整抓放流程（抓红块 → 放进黑框）**实际需要的文件，全部位于 `src/`（运行时根目录）：`src/yolo_grasp/`（入口、抓取腿、放置腿、视觉/规划/守卫模块、离线测试）、`src/pyAgxArm/`（AgileX 官方 SDK）、`src/models/red_block_best.pt`、`src/data/handeye/d405_02_fixed_split/`、`src/yolo_grasp/local/arm_home.json`。文中提到的标定工具（`handeye_cli`、`calibrate_d405`、`jog_calibration`）、审计脚本、训练数据集和 ROS 包**不在本仓库内**；命令里的 `/path/to/this/repo` 请替换成你的实际路径。
 
