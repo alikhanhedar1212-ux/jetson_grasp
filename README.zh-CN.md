@@ -342,7 +342,7 @@ ip -details -statistics link show can1
 
 已观察到 `UP`、`ERROR-ACTIVE`、1 Mbps、收到 CAN 帧且错误计数为 0。`ERROR-ACTIVE` 是正常 CAN 工作状态名称。重启或重新插拔后需重新确认接口名及状态，不能固定假设 USB 总是 can1。
 
-`yolo_grasp` 环境已补充 `python-can 4.6.1`，本地 SDK 导入成功。控制终端已实际连接 Piper X，查询到固件 **S-V1.8-7**，六关节均未使能，机械臂错误和六个驱动故障均为 0。通信通过不等于运动路径或抓放已经验收。
+`yolo_grasp` 环境已补充 `python-can 4.6.1`，本地 SDK 导入成功。控制终端已实际连接 Piper，查询到固件 **S-V1.8-7**，六关节均未使能，机械臂错误和六个驱动故障均为 0。通信通过不等于运动路径或抓放已经验收。
 
 
 ### 7.2 只读状态与固件查询
