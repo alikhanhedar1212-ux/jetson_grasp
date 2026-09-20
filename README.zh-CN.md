@@ -305,15 +305,13 @@ TensorRT 导出使用 `--format engine`，在目标 Jetson 上执行。每次训
 
 ### 6.4 检测与深度参数标定
 
-部署者已报告服务器训练后的 `src/models/red_block_best.pt` 在 D435i 实时 RGB 检测中效果良好。根目录原入口 `detect_d435i_red_block.py` 已扩展为 RGB-D 定位，运行：
+部署者已报告服务器训练后的 `src/models/red_block_best.pt` 在 D405 实时 RGB 检测中效果良好。根目录原入口 `detect_d435i_red_block.py` 已扩展为 RGB-D 定位，运行：
 
 ```bash
 conda activate yolo_grasp
 cd /path/to/this/repo
 python3 detect_d435i_red_block.py
 ```
-
-也可在 `src/yolo_grasp/` 中运行 `python3 -m grasp.live_depth`。默认使用 D435i `243222074879`，RGB 与 Depth 均为 640 × 480 @ 30 FPS，模型为项目根目录 `src/models/red_block_best.pt`，device 为 0，置信度为 0.5。关闭其他占用相机的程序后启动。
 
 Depth 对齐到 Color，使用 RealSense SDK 对齐深度内参及畸变模型生成三维点阵。对每个 `red_block` 检测框取四舍五入后的中心像素，读取该像素的米制深度和对应反投影 XYZ。X 向图像右侧、Y 向下、Z 向相机前方，单位 m。这个点是可见表面点，不是物块体积中心、机械臂基座坐标或直接可执行的抓取目标。
 
