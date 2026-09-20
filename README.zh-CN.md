@@ -265,12 +265,6 @@ python3 -m grasp --config local/config.json capture
 ### 6.3 训练与导出
 #### 当前权重与训练状态
 
-**服务器训练已由部署者报告完成，部署权重为项目根目录 `src/models/red_block_best.pt`。** 部署者已实际运行 D435i RGB 实时检测并报告效果良好。尚未在本文记录服务器训练曲线、mAP、Precision/Recall 等量化结果，不将主观观察写成完整模型验收。
-
-基础权重由外部预训练权重（如 `yolo11n.pt`）复制到项目内使用。先前“没有找到权重”的结论来自有限目录搜索，现已更正。训练采用预训练模型微调，`model_tools train` 要求已有本地 `.pt` 文件。
-
-Jetson 本地训练尝试曾遇到 AMP 检查下载 `yolo26n.pt` 超时，以及 CUDA 分配器 `NVML_SUCCESS == r` 内部断言；未确认确切根因，也未在 Jetson 完成训练。入口已增加 `--no-amp`（跳过 AMP 辅助模型检查，使用 FP32）和 `--workers`（默认 0）。关闭 AMP 本身不保证降低训练内存占用，因此后续训练已转移服务器。
-
 **已生成 `data/red_block/` 训练目录和实际 [dataset.yaml](data/red_block/dataset.yaml)**，包含 70 张训练图片和 25 张验证图片及对应标签。文件名已加批次 ID，避免重名覆盖；原始采集批次保持不变。所有复制文件的 SHA-256、标签坐标和图片配对已校验，无跨集合完全相同图片。来源与哈希见 [manifest.json](data/red_block/manifest.json)，使用说明见 [数据集使用说明](#63-训练与导出)。YAML 的 `path` 使用当前绝对路径，迁移到其他设备后需修改。目录如下：
 
 ```text
