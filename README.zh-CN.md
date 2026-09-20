@@ -526,17 +526,17 @@ python3 src/yolo_grasp/pick_and_place.py --channel can1 --min-available-mb 1200
 | 参数 | 组合入口默认值 | 说明 |
 |---|---|---|
 | `--device` / `--imgsz` | `cpu` / `320` | 抓取 YOLO 推理，降低 CUDA 内存压力 |
-| `--grasp-clearance-mm` / `--lift-to-mm` | `15` / `100` | 相对于观测物块**顶面**的目标高度（2026-09-18 起顶面参考） |
+| `--grasp-clearance-mm` / `--lift-to-mm` | `15` / `100` | 相对于观测物块**顶面**的目标高度 |
 | `--grip-force-n` | `2` | 夹持力命令参数，需现场验证 |
-| `--grasp-target-offset-mm` | `-43 -28 0` | 基座系经验补偿（2026-09-18 现场确认），不能当作通用 TCP 标定 |
+| `--grasp-target-offset-mm` | `-43 -28 0` | 基座系经验补偿，不能当作通用 TCP 标定 |
 | `--grasp-max-joint-delta-deg` / `--grasp-max-travel-mm` | `90` / `200` | 抓取段关节变化和位移限制 |
-| `--place-clearance-mm` | `55` | 放置目标高度（2026-09-18 由 50 增加 5 mm）；独立放置入口默认同为 55 mm |
+| `--place-clearance-mm` | `55` | 放置目标高度；独立放置入口默认同为 55 mm |
 | `--max-j5-deg` / `--max-tilt-deg` | `60` / `25` | J5 规划限制及工具轴最大倾斜 |
 | `--place-target-offset-mm` | 沿用放置入口 `5 5 0` | 基座系毫米，仅作用于放置段 |
 | `--open-mm` / `--open-force-n` | 设备最大行程 / `2` | 松爪目标开度及力参数 |
 | `--retract-mm` | `30` | 松爪后沿基座 +Z 撤离距离 |
 
-独立放置入口当前默认：`--pre-shift-mm 0 0 0`（不预移动）、`--max-joint-delta-deg 120`、`--max-travel-mm 400`、`--path-speed-deg-s 7`、`--final-speed-deg-s 5`（2026-09-18 由 5/4 提速，固件速率同步 3%→5%）、`--motion-envelope-deg 0.8`、`--follow-error-deg 1.2`。组合入口沿用这些放置运动参数。历史记录中的 45 mm、4/3°/s、5/4°/s 等数值是当时配置。
+独立放置入口当前默认：`--pre-shift-mm 0 0 0`（不预移动）、`--max-joint-delta-deg 120`、`--max-travel-mm 400`、`--path-speed-deg-s 7`、`--final-speed-deg-s 5`、`--motion-envelope-deg 0.8`、`--follow-error-deg 1.2`。组合入口沿用这些放置运动参数。历史记录中的 45 mm、4/3°/s、5/4°/s 等数值是当时配置。
 
 不带 `--open-gripper` 的独立放置入口不发夹爪指令；带该选项才松爪并撤离，支持 `--open-step-mm`（默认 2 mm）和 `--open-step-ms`（默认 200 ms）。J5 的 60° 限制作用于规划副本，控制器反馈仍按固件限位检查，避免把反馈毛刺误判成规划限位超限。
 
@@ -546,7 +546,7 @@ python3 src/yolo_grasp/pick_and_place.py --channel can1 --min-available-mb 1200
 
 ## 9. 检查结果与已知问题
 
-### 2026-09-09：D405 手眼标定与代码核查
+### D405 手眼标定与代码核查
 
 D405 固定在腕部，序列号 `260322275595`；棋盘固定在桌面，10×7 方格、9×6 内角点，用户确认单格实际尺寸为 **20 mm**。求解链为 `T_base_flange × T_flange_camera × T_camera_board`，其中 `T_A_B` 将 B 坐标转换到 A。当前使用法兰反馈，不将其直接当作带工具偏移的 TCP。
 
