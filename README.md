@@ -1,10 +1,10 @@
-# Piper X 视觉抓放 · Jetson + RealSense D405
+# Piper 视觉抓放 · Jetson + RealSense D405
 
-在 Jetson 上用一台腕部 RealSense D405，让 AgileX **Piper X** 机械臂把红色物块抓起来放进蓝垫上的黑色方框：
+在 Jetson 上用一台腕部 RealSense D405，让 AgileX **Piper** 机械臂把红色物块抓起来放进蓝垫上的黑色方框：
 
 `固定抓取点 → 识别红块 → go → 直线接近 → 闭爪（力反馈确认）→ 抬升 → place → 识别黑框 → go → 松爪 → 抬离 → home`
 
-> End-to-end visual pick & place for an AgileX Piper X arm on Jetson. A wrist-mounted RealSense D405
+> End-to-end visual pick & place for an AgileX Piper arm on Jetson. A wrist-mounted RealSense D405
 > locates a red block and a black frame on the mat; the arm grasps the block and drops it into the frame.
 
 ## 特点
@@ -19,7 +19,7 @@
 ## 环境
 
 - Jetson + JetPack 6（实测 L4T R36.4.7 / Ubuntu 22.04），Python 3.10
-- AgileX Piper X（实测固件 S-V1.8-7）、AGX 夹爪、SocketCAN `can1` @ 1 Mbps
+- AgileX Piper（实测固件 S-V1.8-7）、AGX 夹爪、SocketCAN `can1` @ 1 Mbps
 - Intel RealSense D405（腕部）；依赖见 `requirements.txt`
 
 ```bash
